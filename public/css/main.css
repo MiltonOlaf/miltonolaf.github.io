@@ -31,7 +31,11 @@ body{
 }
 .jumbotron{
   width: 100%;
-  height: auto;
+  height: 45vh;
+  margin: 6rem 0 0;
+}
+.jumbotron .container{
+  max-width: 48rem;
 }
 .jumbotron h1{
   font-family: 'Ubuntu', sans-serif;
@@ -52,14 +56,25 @@ body{
   background: #0ff;
   z-index: -1;
 }
-
 .jumbotron h2{
   font-weight: 300;
 }
 .about{
-  padding: 20px;
+  margin: 4rem 0 4rem;
 }
-
+.about li{
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #555;
+}
+.about li::after{
+  content: " /";
+  color: #aaa;
+  margin: 0 5px 0;
+}
+.about li:last-child::after{
+  content: "";
+}
 footer{
   background: #f8f8f8;
   border-top: 1px solid #ddd;
@@ -69,7 +84,7 @@ footer{
 footer .social svg{
   color: #888;
   margin-right: 0.5rem;
-  width: 1.3rem;
+  width: 1.4rem;
   height: auto;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
