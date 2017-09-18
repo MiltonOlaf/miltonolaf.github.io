@@ -2,16 +2,28 @@
 <html lang="es">
   {% include head.html %}
   <body>
-    <div class="masthead">
-      <div class="container">
-        <h1 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home"><div class="glitch" data-text="Milton Olaf">{{ site.title }}</div></a>
-        </h1>
-        <a class="menu {% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
-        <a class="menu {% if page.title == "Posts" %} active{% endif %}" href="/posts/">Posts</a>
-        <a class="menu {% if page.title == "Proyectos" %} active{% endif %}" href="/projects/">Proyectos</a>
+    {% if page.title == "Home" %}
+      <div class="jumbotron">
+    {% endif %}
+      <div class="masthead">
+        <div class="container">
+          <h1 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home"><div class="glitch" data-text="Milton Olaf">{{ site.title }}</div></a>
+          </h1>
+          <a class="menu {% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
+          <a class="menu {% if page.title == "Posts" %} active{% endif %}" href="/posts/">Posts</a>
+          <a class="menu {% if page.title == "Proyectos" %} active{% endif %}" href="/projects/">Proyectos</a>
+        </div>
       </div>
-    </div>
+    {% if page.title == "Home" %}
+      <div class="intro">
+        <div class="container">
+          <h1 class="title-jumbotron"><span>Hola, mi nombre es Milton Ol</span>af Paredes</h1>
+          <h2>Por ahora, desarrollador full-stack.</h2>
+        </div>
+      </div>
+      </div>
+    {% endif %}
       {% if page.title == "Home" %}
         {{ content }}
       {% else %}
