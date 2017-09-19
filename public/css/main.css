@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6{
 .menu{
   font-size: 18px;
   font-weight: 700;
-  color: #333;
+  color: #555;
   text-transform: uppercase;
   margin-right: 20px;
   -moz-transition: all 0.5s ease;
@@ -30,8 +30,11 @@ h1, h2, h3, h4, h5, h6{
   transition: all 0.5s ease;
 }
 .menu:hover{
-  color: #555;
+  color: #222;
   text-decoration: none;
+}
+.active{
+  color: #222;
 }
 .jumbotron{
   width: 100%;
@@ -52,20 +55,21 @@ h1, h2, h3, h4, h5, h6{
 .jumbotron h2{
   font-weight: 300;
 }
-.about{
-  margin: 0 0 4rem;
+#about{
+  padding: 2rem 0 3rem;
 }
-.about li{
+
+#about li{
   display: inline-block;
   font-size: 0.8rem;
   color: #555;
 }
-.about li::after{
+#about li::after{
   content: " /";
   color: #aaa;
   margin: 0 5px 0;
 }
-.about li:last-child::after{
+#about li:last-child::after{
   content: "";
 }
 footer{
@@ -252,4 +256,44 @@ footer span{
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.down-button a span {
+  background: transparent;
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin-left: -9px;
+  border-left: 1px solid #555;
+  border-bottom: 1px solid #555;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

@@ -19,8 +19,11 @@
       <div class="intro">
         <div class="container">
           <h1 class="title-jumbotron"><span>Hola, mi nombre es Milton Ol</span>af Paredes</h1>
-          <h2>Por ahora, desarrollador full-stack.</h2>
+          <h2>Desarrollador full-stack, por ahora.</h2>
         </div>
+      </div>
+      <div class="down-button">
+        <a href="#about" class="page-scroll"><span></span></a>
       </div>
       </div>
     {% endif %}
@@ -40,5 +43,21 @@
       </div>
       <span>Hecho sin &#10084; por <a href="//miltonolaf.com">mi</a>, desde México.</span>
     </footer>
+
+    <script src="{{ site.baseurl }}/public/js/modernizr.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery.easing.min.js"></script>
+    <script>
+    // page scrolling
+      $(function() {
+          $(document).on('click', 'a.page-scroll', function(event) {
+              var $anchor = $(this);
+              $('html, body').stop().animate({
+                  scrollTop: $($anchor.attr('href')).offset().top
+              }, 1500, 'easeInOutExpo');
+              event.preventDefault();
+          });
+      });
+    </script>
   </body>
 </html>
