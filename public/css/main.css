@@ -49,6 +49,13 @@ h1, h2, h3, h4, h5, h6{
   font-size: 3rem;
   font-weight: 400;
 }
+
+@media (max-width: 360px) {
+  .jumbotron .title-jumbotron{
+    margin: 1rem 0 0;
+  }
+}
+
 .jumbotron span{
   background: #ccc;
 }
