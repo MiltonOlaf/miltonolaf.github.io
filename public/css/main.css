@@ -1,8 +1,12 @@
 body{
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 h1, h2, h3, h4, h5, h6{
-  font-weight: 400;
+  font-weight: 300;
+}
+.container{
+  max-width: 40rem;
 }
 .masthead{
   padding: 10px;
@@ -15,8 +19,26 @@ h1, h2, h3, h4, h5, h6{
 .masthead-title a:hover{
   text-decoration: none;
 }
+.masthead li{
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.masthead li::after{
+  content: " /";
+  color: #aaa;
+  margin: 0 5px 0;
+}
+.masthead li:last-child::after{
+  content: "";
+}
+.masthead li a{
+  color: #555;
+}
 .content{
   margin-top: 2rem;
+}
+.page, .post {
+    margin-bottom: 3em;
 }
 .menu{
   font-size: 18px;
@@ -55,18 +77,11 @@ h1, h2, h3, h4, h5, h6{
     margin: 1rem 0 0;
   }
 }
-
-.jumbotron span{
-  background: #ccc;
-}
-.jumbotron h2{
-  font-weight: 300;
-}
 #about{
   padding: 2rem 0 3rem;
 }
-
 #about li{
+  font-family: 'Roboto Mono', monospace;
   display: inline-block;
   font-size: 0.8rem;
   color: #555;
@@ -78,6 +93,9 @@ h1, h2, h3, h4, h5, h6{
 }
 #about li:last-child::after{
   content: "";
+}
+#about p, ul{
+  padding: 1rem 0 2rem;
 }
 footer{
   background: #f8f8f8;
@@ -268,7 +286,7 @@ footer span{
 .down-button a span {
   background: transparent;
   position: absolute;
-  bottom: 35px;
+  bottom: 45px;
   left: 50%;
   width: 24px;
   height: 24px;

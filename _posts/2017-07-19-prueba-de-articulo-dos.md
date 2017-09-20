@@ -4,6 +4,7 @@ title:  "Prueba de art dos"
 date:   2017-07-19 11:58:00 -0500
 categories: hola
 tags: hola mundo como se
+comments: true
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Igitur ne dolorem quidem. Audeo dicere, inquit. Quid iudicant sensus? Quid sequatur, quid repugnet, vident. Certe, nisi voluptatem tanti aestimaretis.
 
