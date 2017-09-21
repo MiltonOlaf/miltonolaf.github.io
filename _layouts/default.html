@@ -13,8 +13,8 @@
           <a class="menu {% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
           <a class="menu {% if page.title == "Posts" %} active{% endif %}" href="/posts/">Posts</a>
           <a class="menu {% if page.title == "Proyectos" %} active{% endif %}" href="/projects/">Proyectos</a>
-          {% if page.title == "Posts" %}
-            <li><a href="{{ site.baseurl }}/archive/">archivo</a></li>
+          {% if page.title == "Posts" or page.title == "Búsqueda" or page.title == "Archivo" %}
+            <li><a href="{{ site.baseurl }}/archive/#all">archivo</a></li>
             <li><a href="{{ site.baseurl }}/search/">buscar</a></li>
           {% endif %}
         </div>

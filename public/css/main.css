@@ -5,6 +5,15 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-weight: 300;
 }
+p a{
+  border-bottom: 1px solid #444;
+  color: #444;
+}
+p a:hover, p a:active{
+  text-decoration: none;
+  border-color: #000;
+  color: #000;
+}
 .container{
   max-width: 40rem;
 }
@@ -24,7 +33,7 @@ h1, h2, h3, h4, h5, h6{
   display: inline-block;
 }
 .masthead li::after{
-  content: " /";
+  content: "/ ";
   color: #aaa;
   margin: 0 5px 0;
 }
@@ -325,4 +334,32 @@ footer span{
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+.catbloc:not(:target) {
+    display: none;
+}
+.catbloc:target {
+    animation: slidedown .5s 1;
+    -webkit-animation: slidedown .5s 1;
+}
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translate(0, -50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@-webkit-keyframes slidedown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0, -50px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0);
+    }
 }
