@@ -29,12 +29,12 @@ p a:hover, p a:active{
   text-decoration: none;
 }
 .masthead li{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: inline-block;
+  color: #aaa;
 }
 .masthead li::after{
-  content: "/ ";
-  color: #aaa;
+  content: " /";
   margin: 0 5px 0;
 }
 .masthead li:last-child::after{
@@ -106,6 +106,9 @@ p a:hover, p a:active{
 #about p, ul{
   padding: 1rem 0 2rem;
 }
+#search{
+  padding: 2rem 0 10rem;
+}
 #search input{
   width: 100%;
   font-size: 1.5rem;
@@ -116,6 +119,33 @@ p a:hover, p a:active{
 }
 #search input:focus{
   border: 1px solid #444;
+}
+#search h3{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+#search time{
+  font-size: .8rem;
+  color: #888;
+}
+#search p{
+  font-size: .7rem;
+}
+#archive nav li{
+  font-size: .9rem;
+  list-style: none;
+  display: inline-block;
+}
+#archive nav li a{
+  color: #555;
+}
+#archive nav li::after{
+  content: " /";
+  color: #aaa;
+  margin: 0 5px 1rem;
+}
+#archive nav li:last-child::after{
+  content: "";
 }
 footer{
   background: #f8f8f8;

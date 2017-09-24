@@ -2,44 +2,44 @@
 layout: default
 title: Archivo
 ---
-<nav>
-    <a href="#all">All posts</a>
+<div id="archive">
+  <nav>
+    <li><a href="#all">Todo</a></li>
     {% for category in site.categories %}
-        <a href="#{{ category | first | remove:' ' }}"><strong>{{ category | first }}</strong></a> {% if forloop.last %}.{% else %}, {% endif %}
+    <li><a href="#{{ category | first | remove:' ' }}">{{ category | first }}</a></li>
     {% endfor %}
-</nav>
-<div class="catbloc" id="all">
-  <h2>All posts</h2>
-  {% for post in site.posts %}
-    {% assign currentDate = post.date | date: "%Y" %}
-    {% if currentDate != myDate %}
-      {% unless forloop.first %}</ul>{% endunless %}
-      <h1>{{ currentDate }}</h1>
-      <ul>
-      {% assign myDate = currentDate %}
-    {% endif %}
-    <li><a href="{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a></li>
-    {% if forloop.last %}</ul>{% endif %}
+  </nav>
+  <div class="catbloc" id="all">
+    {% for post in site.posts %}
+      {% assign currentDate = post.date | date: "%Y" %}
+      {% if currentDate != myDate %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h1>{{ currentDate }}</h1>
+        <ul>
+        {% assign myDate = currentDate %}
+      {% endif %}
+      <li><a href="{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a></li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+  </div>
+
+  {% for category in site.categories %}
+      <div class="catbloc" id="{{ category | first | remove:' ' }}">
+          <h2>{{ category | first }}</h2>
+          <ul>
+             {% for posts in category %}
+               {% for post in posts %}
+                 {% if post.url %}
+                   <li>
+                     <a href="{{ post.url }}">
+                       <time>{{ post.date | date: "%-d %B %Y" }}</time>
+                       {{ post.title }}
+                     </a>
+                   </li>
+                 {% endif %}
+               {% endfor %}
+             {% endfor %}
+          </ul>
+      </div>
   {% endfor %}
 </div>
-
-{% for category in site.categories %}
-    <div class="catbloc" id="{{ category | first | remove:' ' }}">
-        <h2>{{ category | first }}</h2>
-
-        <ul>
-           {% for posts in category %}
-             {% for post in posts %}
-               {% if post.url %}
-                 <li>
-                   <a href="{{ post.url }}">
-                     <time>{{ post.date | date: "%-d %B %Y" }}</time>
-                     {{ post.title }}
-                   </a>
-                 </li>
-               {% endif %}
-             {% endfor %}
-           {% endfor %}
-        </ul>
-    </div>
-{% endfor %}
