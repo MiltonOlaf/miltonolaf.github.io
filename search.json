@@ -8,7 +8,7 @@
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{post.categories | join: ', '}}",
       "tags"     : "{{ post.tags | join: ', ' }}",
-      "date"     : "{{ post.date }}",
+      "date"     : "{{ post.date | date: '%-d %B, %Y' }}",
       "description" : "{{post.description | strip_html | remove_chars | escape }}"
 
     } {% unless forloop.last %},{% endunless %}
