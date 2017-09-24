@@ -134,6 +134,9 @@ p a:hover, p a:active{
 #search p{
   font-size: .7rem;
 }
+#archive{
+  padding: 1rem 0 5rem;
+}
 #archive nav li{
   font-size: .9rem;
   list-style: none;
@@ -145,10 +148,52 @@ p a:hover, p a:active{
 #archive nav li::after{
   content: " /";
   color: #aaa;
-  margin: 0 5px 1rem;
+  margin: 0 5px 0;
 }
 #archive nav li:last-child::after{
   content: "";
+}
+#archive .catbloc{
+  margin: 1.5rem 0 0;
+}
+#archive .catbloc li{
+  list-style: none;
+  margin: 0 0 1rem;
+}
+#archive time{
+  font-size: 0.8rem;
+  color: #999;
+}
+#archive time::after{
+  content: " - ";
+  color: #333;
+}
+#archive .catbloc:not(:target) {
+    display: none;
+}
+#archive .catbloc:target {
+    animation: slidedown .5s 1;
+    -webkit-animation: slidedown .5s 1;
+}
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translate(0, -50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@-webkit-keyframes slidedown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0, -50px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0);
+    }
 }
 footer{
   background: #f8f8f8;
@@ -378,34 +423,6 @@ footer span{
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
-}
-
-.catbloc:not(:target) {
-    display: none;
-}
-.catbloc:target {
-    animation: slidedown .5s 1;
-    -webkit-animation: slidedown .5s 1;
-}
-@keyframes slidedown {
-    from {
-        opacity: 0;
-        transform: translate(0, -50px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-@-webkit-keyframes slidedown {
-    from {
-        opacity: 0;
-        -webkit-transform: translate(0, -50px);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translate(0);
-    }
 }
 .highlight{
   margin: 0;
