@@ -47,7 +47,7 @@
       </div>
       <span>Hecho sin &#10084; por <a href="//miltonolaf.com">mi</a>, desde México.</span>
     </footer>
-
+    {% if page.title == "Home" %}
     <script src="{{ site.baseurl }}/public/js/modernizr.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/public/js/jquery.easing.min.js"></script>
@@ -62,6 +62,12 @@
           });
       });
     </script>
+    {% endif %}
+    {% if page.comments %}
     <script id="dsq-count-scr" src="//miltonolaf.disqus.com/count.js" async></script>
+    {% endif %}
+    {% if page.mathjax %}
+      {% include mathjax.html %}
+    {% endif %}
   </body>
 </html>
