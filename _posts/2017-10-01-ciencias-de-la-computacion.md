@@ -20,7 +20,7 @@ Los sistemas informáticos son omnipresentes, desde el sistema integrado que con
 
 Más allá de nuestra vida cotidiana, la informática ha tenido un impacto igualmente grande en otras áreas de la ciencia, la mayoría de las cuales ahora requieren el procesamiento y análisis de inmensos conjuntos de datos. Desde el manejo de datos en el gran colisionador de hadrones hasta el proyecto del genoma humano, estos esfuerzos científicos simplemente no serían posibles sin las ciencias de la computación.
 
-Las ciencias de la computación abarcan una serie de temas, desde los estudios teóricos de algoritmos y los límites de la computación hasta las cuestiones prácticas como las creación de nuevo software y hardware. Por lo tanto vale la pena conocer las distintas áreas de estudio de las ciencias de la computación.
+Las ciencias de la computación abarcan una serie de temas, desde los estudios teóricos de algoritmos y los límites de la computación hasta las cuestiones prácticas como la creación de nuevo software y hardware. Por lo tanto vale la pena conocer las distintas áreas de estudio de las ciencias de la computación.
 
 ## Ciencias de la computación teóricas
 Las ciencias de la computación teóricas, en las cuales me introduciré un poco más al carecer de gran popularidad (quizá por ser complejas). Son matemáticas y abstractas en espíritu, pero derivan su motivación de la computación práctica y cotidiana. Su objetivo es comprender la naturaleza de la computación y como consecuencia de esta comprensión, proporcionar metodologías más eficientes.
