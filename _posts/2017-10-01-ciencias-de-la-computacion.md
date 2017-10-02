@@ -35,7 +35,7 @@ La teoría de la computación es el estudio de la computación eficiente, modelo
 * Teoría de la computación cuántica
 
 ### Teoría de códigos y teoría de la información
-La teoría de la información está relacionada con la cuantificación de la información, mientras que la teoría de códigos es el estudio de las propiedades de los códigos (sistemas para convertir la información de una forma a otra) y su aptitud para una aplicación específica. Los códigos se utilizan para la compresión de datos, criptografía , detección y corrección de errores y , más recientemente, también para la codificación de redes.
+La teoría de la información está relacionada con la cuantificación de la información, mientras que la teoría de códigos es el estudio de las propiedades de los códigos (sistemas para convertir la información de una forma a otra) y su aptitud para una aplicación específica. Los códigos se utilizan para la compresión de datos, criptografía, detección y corrección de errores y, más recientemente, también para la codificación de redes.
 
 ### Teoría de los lenguajes de programación
 Rama de la informática que se ocupa del diseño, la implementación, el análisis, la caracterización y la clasificación de los lenguajes de programación y sus características individuales. Cae dentro de la disciplina de la informática, que depende y afecta a las matemáticas, la ingeniería de software y la lingüística.
