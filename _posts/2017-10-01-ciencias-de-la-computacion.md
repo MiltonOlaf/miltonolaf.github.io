@@ -83,4 +83,4 @@ Las ciencias de la computación aplicadas se refieren a ciertos conceptos de inf
 * Sistemas concurrentes, paralelos y distribuidos
 * Interacción hombre-computador
 
-Las ciencias de la computación como seguramente ya habrán notado, tradicionalmente no se ha enseñado en las escuelas. Por el contrario, el uso de paquetes de software se ha enseñado en las asignaturas de TIC, que es un tema muy diferente.
+Las ciencias de la computación como realmente son, tradicionalmente no se ha enseñado en las escuelas. Por el contrario, el uso de paquetes de software se ha enseñado en las asignaturas de TIC, que es un tema muy diferente.
