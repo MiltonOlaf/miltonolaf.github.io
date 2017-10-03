@@ -2,7 +2,7 @@
 layout: post
 title:  "¿Qué son las ciencias de la computación?"
 date:   2017-10-02 15:10:00 -0500
-categories: escritura
+categories: divulgación
 tags: ciencias de la computación
 description: La importancia de las ciencias de la computación, su influencia en el mundo moderno y todas sus áreas de estudio
 comments: true
