@@ -2,9 +2,9 @@
 layout: post
 title:  "¿Qué son las ciencias de la computación?"
 date:   2017-10-02 15:10:00 -0500
-categories: articulos
-tags: ciencias de la computacion
-description: Youll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes.
+categories: escritura
+tags: ciencias de la computación
+description: La importancia de las ciencias de la computación, su influencia en el mundo moderno y todas sus áreas de estudio
 comments: true
 ---
 
@@ -25,7 +25,7 @@ Las ciencias de la computación abarcan una serie de temas, desde los estudios t
 ## Ciencias de la computación teóricas
 Las ciencias de la computación teóricas, en las cuales me introduciré un poco más al carecer de gran popularidad (quizá por ser complejas). Son matemáticas y abstractas en espíritu, pero derivan su motivación de la computación práctica y cotidiana. Su objetivo es comprender la naturaleza de la computación y como consecuencia de esta comprensión, proporcionar metodologías más eficientes.
 
-### Teoría de la computación.
+### Teoría de la computación
 La teoría de la computación es el estudio de la computación eficiente, modelos de procesos computacionales y sus límites. Las áreas en las que se divide están vinculadas por la pregunta: "¿Cuáles son las capacidades y limitaciones fundamentales de las computadoras?".
 
 * Teoría de autómatas
