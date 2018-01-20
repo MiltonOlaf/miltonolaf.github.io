@@ -6,7 +6,7 @@ title: Archivo
   <nav>
     <li><a href="#all">Todo</a></li>
     {% for category in site.categories %}
-    <li><a href="#{{ category | first | remove:' ' }}">{{ category | first }}</a></li>
+    <li><a href="#{{ category | first | replace: ' ','-' }}">{{ category | first }}</a></li>
     {% endfor %}
   </nav>
   <div class="catbloc" id="all">
@@ -24,7 +24,7 @@ title: Archivo
   </div>
 
   {% for category in site.categories %}
-      <div class="catbloc" id="{{ category | first | remove:' ' }}">
+      <div class="catbloc" id="{{ category | first | replace: ' ','-' }}">
           <h2>{{ category | first }}</h2>
           <ul>
              {% for posts in category %}
