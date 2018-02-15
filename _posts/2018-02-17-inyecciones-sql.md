@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Un vistazo a las inyecciones SQL"
-date:   2018-02-15 15:10:00 -0500
+date:   2018-02-17 15:10:00 -0500
 categories: seguridad
 tags: php seguridad web
 description: La importancia de las ciencias de la computación, su influencia en el mundo moderno y todas sus áreas de estudio
