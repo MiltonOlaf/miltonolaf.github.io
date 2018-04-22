@@ -2,17 +2,6 @@
   
     {
 
-      "title"    : "Un vistazo a las inyecciones SQL",
-      "url"      : "/2018/02/un-vistazo-a-las-inyecciones-sql/",
-      "category" : "seguridad",
-      "tags"     : "php, seguridad web, sql",
-      "date"     : "20 February, 2018",
-      "description" : "La importancia de las ciencias de la computación, su influencia en el mundo moderno y todas sus áreas de estudio"
-
-    } ,
-  
-    {
-
       "title"    : "¿Qué son las ciencias de la computación?",
       "url"      : "/2017/10/ciencias-de-la-computacion/",
       "category" : "divulgación",
