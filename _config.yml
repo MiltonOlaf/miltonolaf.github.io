@@ -41,12 +41,10 @@ sass:
   style: :compressed
 # Build settings
 markdown: kramdown
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - .git*
-  - .gitignore
-  - assets
-  - _sass
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - LICENSE
+#   - README.md
+#   - .git*
+#   - .gitignore
