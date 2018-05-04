@@ -1,0 +1,14 @@
+home:
+  title: Home
+  url:
+  target: _self
+
+blog:
+  title: Posts
+  url: posts
+  target: _self
+
+projects:
+  title: Proyectos
+  url: projects
+  target: _self

@@ -1,0 +1,13 @@
+purpurite:
+  title: Purpurite
+  img_url: /assets/img/purpurite.svg
+  description: An open-source machine learning framework for everyone.
+  web: https://purpurite.org/
+  repo: https://github.com/innusource/purpurite
+
+glitch-theme:
+  title: Glitch Theme
+  img_url: /assets/img/glitch-theme.png
+  description: A simple and cool theme for Jekyll and GitHub Pages.
+  web: http://miltonolaf.com/glitch-jekyll
+  repo: https://github.com/miltonolaf/glitch-jekyll

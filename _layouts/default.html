@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main{% if page.layout != "post" %} id="{{ page.title | downcase | replace: " ", "-" }}"{% endif %}>
+    {% if page.title != "Home" and layout.auto_container != false %}<div class="container">{% endif %}
+        {{ content }}
+    {% if page.title != "Home" and layout.auto_container != false %}</div>{% endif %}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {% case page.type %}
+        {% when 'year' %}
+          {{ page.date | date: "%Y" }} &middot; {{ site.title }}
+        {% when 'month' %}
+          {{ page.date | date: "%m/%Y" }} &middot; {{ site.title }}
+        {% when 'day' %}
+          {{ page.date | date: "%d/%m/%Y" }} &middot; {{ site.title }}
+        {% else %}
+          {{ page.title }} &middot; {{ site.title }}
+      {% endcase %}
+    {% endif %}
+  </title>
+  {% seo title=false %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/{{ site.favicon }}">
+  {% feed_meta %}
+</head>
