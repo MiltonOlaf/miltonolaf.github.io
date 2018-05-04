@@ -41,10 +41,14 @@ sass:
   style: :compressed
 # Build settings
 markdown: kramdown
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - LICENSE
-#   - README.md
-#   - .git*
-#   - .gitignore
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - .git*
+  - .gitignore
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
