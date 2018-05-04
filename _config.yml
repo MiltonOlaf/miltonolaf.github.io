@@ -25,6 +25,14 @@ author:
 
 favicon: favicon.png # favicon name in assets/img/
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image:
+        path: /assets/img/image.png
+
 permalink: /:year/:month/:title/
 
 # Assets - We specify the directory for Jekyll so we can use @imports.
