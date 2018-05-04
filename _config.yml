@@ -1,0 +1,51 @@
+# Website info
+title: Milton Olaf
+acronym: mp
+email: hey@miltonolaf.com
+description: > # this means to ignore newlines until "baseurl:"
+  Milton Olaf Paredes es un desarrollador de software y fanático de las ciencias de la computación, Mexicano, que disfruta escribir y enseñar sobre temas de su interes.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+
+url: https://miltonolaf.com # the base hostname & protocol for your site, e.g. http://example.com
+lang: es_MX
+paginate: 6
+paginate_path: /posts/:num/
+# Social users - twitter, instagram, github, gitlab, codepen profile, youtube and facebook
+twitter:
+  username: olafmilton
+social:
+  twitter: olafmilton
+  github: miltonolaf
+  feed: /feed.xml
+
+author:
+  name: Milton Olaf Paredes
+  twitter: olafmilton
+
+
+favicon: favicon.png # favicon name in assets/img/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image:
+        path: /assets/img/image.png
+
+permalink: /:year/:month/:title/
+
+# Assets - We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir: _sass
+  style: :compressed
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - .git*
+  - .gitignore
