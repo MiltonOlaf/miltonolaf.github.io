@@ -1,6 +1,5 @@
 # Website info
 title: Milton Olaf
-acronym: mp
 email: hey@miltonolaf.com
 description: > # this means to ignore newlines until "baseurl:"
   Milton Olaf Paredes es un desarrollador de software y fanático de las ciencias de la computación, Mexicano, que disfruta escribir y enseñar sobre temas de su interes.
@@ -25,14 +24,6 @@ author:
 
 
 favicon: favicon.png # favicon name in assets/img/
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      image:
-        path: /assets/img/image.png
 
 permalink: /:year/:month/:title/
 
