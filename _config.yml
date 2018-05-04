@@ -48,3 +48,5 @@ exclude:
   - README.md
   - .git*
   - .gitignore
+  - assets
+  - _sass
