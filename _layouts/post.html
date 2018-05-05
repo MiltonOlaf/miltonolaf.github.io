@@ -59,7 +59,7 @@ auto_container: false
 </div>
 <div class="container">
   <hr>
-  {% if env == "production" %}
+  {% if jekyll.environment == "production" %}
     {% include disqus.html %}
   {% endif %}
 </div>

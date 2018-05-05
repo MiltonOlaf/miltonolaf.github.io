@@ -18,20 +18,13 @@ social:
   github: miltonolaf
   feed: /feed.xml
 
+disqus: miltonolaf
+
 author:
   name: Milton Olaf Paredes
   twitter: olafmilton
 
-
 favicon: favicon.png # favicon name in assets/img/
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      image:
-        path: /assets/img/image.png
 
 permalink: /:year/:month/:title/
 
