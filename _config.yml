@@ -19,6 +19,7 @@ social:
   feed: /feed.xml
 
 disqus: miltonolaf
+analytics_id: UA-115008234-2
 
 author:
   name: Milton Olaf Paredes
@@ -27,6 +28,16 @@ author:
 favicon: favicon.png # favicon name in assets/img/
 
 permalink: /:year/:month/:title/
+
+# Compress html
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  startings: [html, head, body]
 
 # Assets - We specify the directory for Jekyll so we can use @imports.
 sass:
