@@ -8,11 +8,13 @@ submenu: true
 <div class="post-preview">
   <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
     <h2>{{ post.title }}</h2>
-    <h6>{{ post.date | date: "%b %d, %Y" | upcase }}</h6>
+    <h6>{{ post.date | date: "%d %b %Y" | upcase }}</h6>
   </a>
-  <a href="#">
-    <p>{{ post.content | strip_html | truncatewords: 23, "" }}...</p>
-  </a>
+  <p>
+    <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
+      {{ post.content | strip_html | truncatewords: 23, "" }}...
+    </a>
+  </p>
 </div>
 {% endfor %}
 
