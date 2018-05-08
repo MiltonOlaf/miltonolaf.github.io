@@ -11,25 +11,19 @@
     .container{
       max-width: 48rem;
     }
-    h1, h2, p{
-      max-width: 32rem;
-      text-align: left;
-    }
-    h2{
-      color: $gray-3;
+    h1{
+      max-width: 35rem;
       margin-bottom: 1rem;
-      &::before{
-        content: '#';
-        padding: 0 10px 0 0;
-        color: $gray-1;
-      }
     }
     p{
+      max-width: 32rem;
       margin-bottom: .5rem;
+      text-align: left;
     }
   }
   .title{
-    font-size: 2.5rem;
+    color: $gray-4;
+    font-size: 2.3rem;
   }
   .glitch-text::after, .glitch-text::before{
     background: $body-bg-alter;
