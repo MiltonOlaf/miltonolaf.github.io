@@ -7,9 +7,7 @@ layout: compress
   <body>
     {% include header.html %}
     <main{% if page.layout != "post" %} id="{{ page.title | downcase | replace: " ", "-" }}"{% endif %}>
-    {% if page.title != "Home" and layout.auto_container != false %}<div class="container">{% endif %}
-        {{ content }}
-    {% if page.title != "Home" and layout.auto_container != false %}</div>{% endif %}
+      {{ content }}
     </main>
     {% include footer.html %}
   </body>

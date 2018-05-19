@@ -22,7 +22,7 @@ nav_invert: true
     </a>
   </div>
 </div>
-<div id="more" class="container">
+<!-- <div id="more" class="container">
   <h3>Intereses</h3>
   <ul>
     <li>desarrollo web</li>
@@ -38,4 +38,20 @@ nav_invert: true
     Disfruto ayudar, así que, ¿tienes alguna pregunta sobre <a title="Computer Science">CS</a> o la vida?, ¿qué tal un mentor para tú proyecto?
   </p>
   <p>Escribeme a <a href="mailto:{{site.email}}">{{site.email}}</a></p>
-</div>
+</div> -->
+<section id="posts">
+  <div class="container">
+    <h1 class="min-head">POSTS <small>spanish only</small></h1>
+    {% for post in site.posts limit:5 %}
+    <a class="post-preview" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
+        <span class="head">
+          <h2>{{ post.title }}</h2>
+          <h6>{{ post.date | date: "%d %b %Y" | upcase }}</h6>
+        </span>
+        <span class="p">
+          {{ post.content | strip_html | truncatewords: 23, "" }}...
+        </span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
