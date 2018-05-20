@@ -1,13 +1,25 @@
 purpurite:
-  title: Purpurite
+  title: Purpurite project
   img_url: /assets/img/purpurite.svg
-  description: An open-source machine learning framework for everyone.
-  web: https://purpurite.org/
-  repo: https://github.com/innusource/purpurite
+  description: A generator of static sites for all types of users, in Python.
+  link: https://project.purpurite.org/
+  main: true
 
 glitch-theme:
   title: Glitch Theme
   img_url: /assets/img/glitch-theme.png
-  description: A simple and cool theme for Jekyll and GitHub Pages.
-  web: http://miltonolaf.com/glitch-jekyll
-  repo: https://github.com/miltonolaf/glitch-jekyll
+  description: A simple and cool SCSS theme for Jekyll and GitHub Pages.
+  link: http://miltonolaf.com/glitch-jekyll
+  main: true
+
+purpur2ite:
+  title: Purpurite project
+  img_url: /assets/img/purpurite.svg
+  description: A generator of static sites for all types of users, in Python.
+  link: https://project.purpurite.org/
+
+purpur3ite:
+  title: Purpurite project
+  img_url: /assets/img/purpurite.svg
+  description: A generator of static sites for all types of users, in Python.
+  link: https://project.purpurite.org/
