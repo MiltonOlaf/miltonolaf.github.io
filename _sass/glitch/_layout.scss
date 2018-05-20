@@ -9,12 +9,7 @@
   margin-left:  auto;
   margin-right: auto;
 }
-#posts{
-  .container{
-    max-width: 44rem;
-  }
-}
-#projects{
+.hero, #posts, #projects{
   .container{
     max-width: 48rem;
   }

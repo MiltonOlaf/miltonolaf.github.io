@@ -5,10 +5,10 @@ home:
 
 blog:
   title: posts
-  url: "#posts"
+  url: "posts"
   target: _self
 
 projects:
   title: projects
-  url: "#projects"
+  url: "projects"
   target: _self
