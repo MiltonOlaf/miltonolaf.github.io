@@ -9,7 +9,7 @@
   margin-left:  auto;
   margin-right: auto;
 }
-.hero, #posts, #projects{
+.hero, #posts, #projects, header{
   .container{
     max-width: 48rem;
   }
@@ -17,10 +17,5 @@
 .sub-header{
   .container{
     max-width: 48rem;
-  }
-}
-header{
-  .container{
-    max-width: 62.5rem;
   }
 }
