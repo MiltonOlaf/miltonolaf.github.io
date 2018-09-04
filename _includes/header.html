@@ -1,26 +1,26 @@
 {% assign pages_list = site.pages | uniq: "title" | sort: "in_nav" %}
 <header class="header{% if page.nav_invert or page.layout == "post" %} invert{% endif %}">
-  <div class="container">
-    <nav>
-      <ul>
-          {% for node in site.data.navigation %}
-            <li><a class="{% if node[0] == "home" %}home {% endif %}{% if page.title == node[1].title %}active{% endif %}" href="{% unless node[1].type %}{% if node[1].type != "external" %}{{ site.baseurl }}/{% endif %}{% endunless %}{{ node[1].url }}" target="{{node[1].target}}">{% if node[1].title == "Home" %}{{ site.title | remove: " " | upcase }}{% else %}{{ node[1].title | upcase }}{% endif %}</a></li>
-          {% endfor %}
-      </ul>
-    </nav>
-  </div>
+	<div class="container">
+		<nav>
+			<ul>
+				{% for node in site.data.navigation %}
+				<li><a class="{% if node[0] == "home" %}home {% endif %}{% if page.title == node[1].title %}active{% endif %}" href="{% unless node[1].type %}{% if node[1].type != "external" %}{{ site.baseurl }}/{% endif %}{% endunless %}{{ node[1].url }}" target="{{node[1].target}}">{% if node[1].title == "Home" %}{{ site.title | remove: " " | upcase }}{% else %}{{ node[1].title | upcase }}{% endif %}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
 </header>
 {% if page.title != "Home" and page.layout != "post" %}
-  <div class="sub-header">
-    <div class="container">
-      <div class="inline-header">
-        <h1 class="title">{{ page.title | downcase }}</h1>
-        {% if page.submenu or page.layout == "archive" or page.layout == "tag" %}
-          <ul>
-            <li><a href="{{ site.baseurl }}/search">búsqueda</a></li>
-          </ul>
-        {% endif %}
-      </div>
-    </div>
-  </div>
+<div class="sub-header">
+	<div class="container">
+		<div class="inline-header">
+			<h1 class="title">{{ page.title | downcase }}</h1>
+			{% if page.submenu or page.layout == "archive" or page.layout == "tag" %}
+			<ul>
+				<li><a href="{{ site.baseurl }}/search">búsqueda</a></li>
+			</ul>
+			{% endif %}
+		</div>
+	</div>
+</div>
 {% endif %}
