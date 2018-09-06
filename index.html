@@ -38,11 +38,11 @@ nav_invert: true
     {% for post in site.posts limit:5 %}
     <a class="post-preview" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
         <span class="head">
-          <h2>{{ post.title }}</h2>
+          <h3>{{ post.title }}</h3>
           <h6>{{ post.date | date: "%d %b %Y" | upcase }}</h6>
         </span>
         <span class="p">
-          {{ post.content | strip_html | truncatewords: 23, "" }}...
+          {{ post.content | strip_html | truncatewords: 15, "" }}...
         </span>
     </a>
     {% endfor %}
