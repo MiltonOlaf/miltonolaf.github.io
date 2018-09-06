@@ -6,12 +6,12 @@ section#posts{
   padding: 4rem 0;
 }
 .post-preview{
-  padding: 1rem 0;
+  padding: 1.35rem 0;
   border-top: 1px solid rgba(0,0,0,.1);
   display: block;
   border-bottom: 0;
   &:hover{
-    h2, h6{
+    h3, h6{
       color: $color-one;
     }
     color: inherit;
@@ -19,9 +19,8 @@ section#posts{
   &:last-child{
     border-bottom: 1px solid rgba(0,0,0,.1);
   }
-  h2{
+  h3{
     line-height: 1.5;
-    padding: .25rem 0;
     margin: 0;
     color: $gray-4;
   }
