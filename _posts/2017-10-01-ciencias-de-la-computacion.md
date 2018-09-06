@@ -11,7 +11,9 @@ tags: computación introducción ciencia
 comments: true
 ---
 
-Las ciencias de la computación no tratan sólo de computadoras. Más bien son el estudio de la computación y la información, es un tema que se involucra en la propia composición del mundo, y en los últimos 30 años ha transformado la forma en que dirigimos nuestra vida cotidiana.
+Creo que una buena forma de comenzar a escribir sobre ciencias de la computación es atacar una pregunta fundamental. Sí, hablo de la pregunta en el titulo de este post. Tal vez no lo sabias pero no tratan sólo de computadoras...
+
+Más bien son el estudio de la computación y la información, un tema que se involucra en la propia composición del mundo, y en los últimos 30 años ha transformado la forma en que dirigimos nuestra vida cotidiana.
 
 > Las ciencias de la computación no tratan sobre las computadoras más de lo que la astronomía trata sobre los telescopios.
 >
