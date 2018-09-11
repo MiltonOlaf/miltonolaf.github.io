@@ -10,17 +10,3 @@
 		</nav>
 	</div>
 </header>
-{% if page.title != "Home" and page.layout != "post" %}
-<div class="sub-header">
-	<div class="container">
-		<div class="inline-header">
-			<h1 class="title">{{ page.title | downcase }}</h1>
-			{% if page.submenu or page.layout == "archive" or page.layout == "tag" %}
-			<ul>
-				<li><a href="{{ site.baseurl }}/search">búsqueda</a></li>
-			</ul>
-			{% endif %}
-		</div>
-	</div>
-</div>
-{% endif %}
