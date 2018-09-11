@@ -3,13 +3,10 @@
 // Super small header above the content for site name and short description.
 
 .header{
-  height: 100px !important;
+	padding: 2rem 0 0;
   background: $body-bg;
   overflow: hidden;
   overflow-x: auto;
-  &.invert{
-    background: $body-bg-alter;
-  }
   nav{
     position: relative;
     min-width: 100%;
@@ -34,10 +31,10 @@
       vertical-align: middle;
       margin: 0;
       li{
-        letter-spacing: .25em;
+        letter-spacing: .15em;
         margin-right: 1.5rem;
         list-style: none;
-        font-size: 14px;
+        font-size: 0.75rem;
         &:last-child{
           margin-right: 0;
           padding-right: 1.5rem;
@@ -59,51 +56,6 @@
     color: $color-one;
   }
 }
-.sub-header{
-  background: $body-bg-alter;
-  padding: 2.5rem 0 2.5rem 0;
-  .title{
-    font-size: 2.2rem;
-  }
-  .inline-header{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between !important;
-    h1{
-      margin: 0;
-    }
-    ul{
-      align-self: center;
-      text-align: right;
-      list-style: none;
-      margin: 0;
-      li{
-        display: inline-flex;
-        font-family: $code-font-family;
-        padding: 0;
-        font-size: .8rem;
-        color: $gray-2;
-        a{
-          color: $li-link-color;
-          border-bottom: 0;
-          border-radius: 3px;
-          padding: .25em .5em;
-          line-height: middle;
-          &:hover{
-            color: darken($li-link-color, 20%);
-            border-bottom: 0;
-          }
-          &:first-child{
-            margin-top: -5px;
-          }
-        }
-      }
-      li ~ li::before{
-        content: '/';
-        padding: 0 10px;
-        color: $gray-1;
-      }
-    }
-  }
+.invert{
+	background: $body-bg-alter;
 }
