@@ -4,7 +4,7 @@
 
 .header{
 	padding: 2rem 0 0;
-  background: $body-bg;
+  background: $body-bg-alter;
   overflow: hidden;
   overflow-x: auto;
   nav{
@@ -55,7 +55,4 @@
   .active{
     color: $color-one;
   }
-}
-.invert{
-	background: $body-bg-alter;
 }
