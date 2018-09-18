@@ -11,9 +11,9 @@ tags: computación introducción ciencia
 comments: true
 ---
 
-Creo que una buena forma de comenzar a escribir sobre ciencias de la computación es atacar una pregunta fundamental. Sí, hablo de la pregunta en el titulo de este post. Tal vez no lo sabias pero no tratan sólo de computadoras...
+Creo que una buena forma de comenzar a escribir sobre ciencias de la computación es atacar una pregunta fundamental. Sí, hablo de la pregunta en el titulo de este post, tal vez no lo sabias pero no tratan sólo de computadoras...
 
-Más bien son el estudio de la computación y la información, un tema que se involucra en la propia composición del mundo, y en los últimos 30 años ha transformado la forma en que dirigimos nuestra vida cotidiana.
+Se podría decir que son son el estudio de la computación y la información, un tema que se involucra en la propia composición del mundo, ya que en los últimos 30 años ha transformado la forma en que dirigimos nuestra vida cotidiana.
 
 > Las ciencias de la computación no tratan sobre las computadoras más de lo que la astronomía trata sobre los telescopios.
 >
@@ -28,7 +28,7 @@ Más allá de nuestra vida cotidiana, la informática ha tenido un impacto igual
 Las ciencias de la computación abarcan una serie de temas, desde los estudios teóricos de algoritmos y los límites de la computación hasta las cuestiones prácticas como la creación de nuevo software y hardware. Por lo tanto vale la pena conocer las distintas áreas de estudio de las ciencias de la computación.
 
 ## Ciencias de la computación teóricas
-Las ciencias de la computación teóricas, en las cuales me introduciré un poco más al carecer de gran popularidad (quizá por ser complejas). Son matemáticas y abstractas en espíritu, pero derivan su motivación de la computación práctica y cotidiana. Su objetivo es comprender la naturaleza de la computación y como consecuencia de esta comprensión, proporcionar metodologías más eficientes.
+Las ciencias de la computación teóricas, en las cuales me introduciré un poco más al carecer de gran popularidad. Son matemáticas y abstractas en espíritu, pero derivan su motivación de la computación práctica y cotidiana. Su objetivo es comprender la naturaleza de la computación y como consecuencia de esta comprensión, proporcionar metodologías más eficientes.
 
 ### Teoría de la computación
 La teoría de la computación es el estudio de la computación eficiente, modelos de procesos computacionales y sus límites. Las áreas en las que se divide están vinculadas por la pregunta: "¿Cuáles son las capacidades y limitaciones fundamentales de las computadoras?".
