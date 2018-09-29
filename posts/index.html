@@ -3,19 +3,22 @@ layout: default
 title: Posts
 in_nav: 1
 ---
-{% for post in paginator.posts %}
-<div class="post-preview">
-  <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
-    <h2>{{ post.title }}</h2>
-    <h6>{{ post.date | date: "%d %b %Y" | upcase }}</h6>
-  </a>
-  <p>
-    <a href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
-      {{ post.content | strip_html | truncatewords: 23, "" }}...
+<section id="posts">
+  <div class="container">
+    <h1 class="min-head">ALL POSTS</h1>
+    {% for post in paginator.posts %}
+    <a class="post-preview" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
+        <span class="head">
+          <h3>{{ post.title }}</h3>
+          <h6>{{ post.date | date: "%d %b %Y" | upcase }}</h6>
+        </span>
+        <span class="p">
+          {{ post.content | strip_html | truncatewords: 15, "" }}...
+        </span>
     </a>
-  </p>
-</div>
-{% endfor %}
+    {% endfor %}
+  </div>
+</section>
 
 <div class="pagination">
   {% if paginator.next_page %}
