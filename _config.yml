@@ -52,6 +52,7 @@ exclude:
   - README.md
   - .git*
   - .gitignore
+  - vendor
 plugins:
   - jekyll-feed
   - jekyll-paginate
