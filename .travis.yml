@@ -8,6 +8,7 @@ addons:
   ssh_known_hosts: 104.248.70.250
 sudo: false
 cache: bundler
+edge: true
 before_install:
   - bundle install
   - bash _scripts/install.sh
