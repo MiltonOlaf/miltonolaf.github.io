@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Un vistazo a las inyecciones SQL"
-date: 2018-02-20 15:10:00 -0500
 image:
   path: /assets/img/web-security.jpg
   rights: '"Programming Foundations: Web Security" by Kevin Skoglund'
