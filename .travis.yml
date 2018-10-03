@@ -9,6 +9,7 @@ addons:
 sudo: false
 cache: bundler
 before_install:
+  - bundle install
   - bash _scripts/install.sh
 script:
   - bash _scripts/build.sh

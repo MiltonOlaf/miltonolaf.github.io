@@ -1,4 +1,4 @@
 #!/bin/bash
 set -x
 
-bundle exec htmlproofer _site --only-4xx --external_only --check-html --check-favicon --allow-hash-href --http-status-ignore 429
+bundle exec htmlproofer _site --url-ignore "/miltonolaf.com|github.com/" --only-4xx --http-status-ignore "403" --check-html --check-favicon
