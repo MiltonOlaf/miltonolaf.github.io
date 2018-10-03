@@ -5,7 +5,7 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 addons:
-  ssh_known_hosts: miltonolaf.com
+  ssh_known_hosts: 104.248.70.250
 sudo: false
 cache: bundler
 before_install:
