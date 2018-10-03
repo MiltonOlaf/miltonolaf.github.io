@@ -1,18 +1,22 @@
 language: ruby
 rvm:
-  - 2.5.1
+  - 2.4.3
+cache:
+  bundler: true
+  directories:
+    - node_modules
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 addons:
   ssh_known_hosts: 104.248.70.250
-sudo: false
-cache: bundler
+  apt:
+    packages:
+      - graphicsmagick
 before_install:
-  - bundle install
-  - bash _scripts/install.sh
+- bash _scripts/install.sh
 script:
-  - bash _scripts/build.sh
-  - bash _scripts/test.sh
+- bash _scripts/build.sh
+- bash _scripts/test.sh
 after_success:
-  - bash _scripts/deploy.sh
+- bash _scripts/deploy.sh
