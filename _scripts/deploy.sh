@@ -1,10 +1,20 @@
 #!/bin/bash
+set -xe
+
 if [ $TRAVIS_BRANCH == 'master' ] ; then
-	echo "Deploying to remote"
-	cd _site
-	git add .
-	git commit -m "Deploy build #$TRAVIS_BUILD_NUMBER"
-	git push deploy master
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_rsa
+
+  cd public
+  git init
+
+  git remote add deploy "deploy@104.248.70.250:/www/var/miltonolaf.com"
+  git config user.name "Travis CI"
+  git config user.email "olafmilton+travis@gmail.com"
+
+  git add .
+  git commit -m "Deploy"
+  git push --force deploy master
 else
-	echo "Not deploying, since this branch isn't master."
+  echo "Not deploying, since this branch isn't master."
 fi
