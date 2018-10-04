@@ -5,7 +5,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   eval "$(ssh-agent -s)"
   ssh-add ~/.ssh/id_rsa
 
-  cd public
+  cd _site
   git init
 
   git remote add deploy "deploy@104.248.70.250:/www/var/miltonolaf.com"
