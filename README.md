@@ -1,2 +1,1 @@
-# glitch-jekyll
-Theme for Jekyll
+# miltonolaf.com
