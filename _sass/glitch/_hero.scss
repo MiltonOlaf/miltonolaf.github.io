@@ -7,17 +7,14 @@
     padding-top: 1rem;
   }
   h1{
-    max-width: 28rem;
-    margin-bottom: 1rem;
+    max-width: 34rem;
     color: $gray-4;
+    margin-top: 0;
     font-size: 2.3rem;
   }
   p{
     max-width: 32rem;
     margin-bottom: .5rem;
-    text-align: left;
-  }
-  h1, h2{
-    margin: 0;
+    text-align: justify;
   }
 }
