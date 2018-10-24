@@ -4,8 +4,27 @@ title: Posts
 in_nav: 1
 ---
 <section id="posts">
+  <div id="search-searchbar"></div>
+
+  <div class="post-list" id="search-hits">
+    {% for post in site.posts %}
+      <div class="post-item">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h2>
+
+        <div class="post-snippet">{{ post.excerpt }}</div>
+      </div>
+    {% endfor %}
+  </div>
+  {% include algolia.html %}
+  
   <div class="container">
-    <div id="search-searchbar"></div>
     <h1 class="min-head">ALL POSTS</h1>
     {% for post in paginator.posts %}
     <a class="post-preview" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
@@ -37,4 +56,3 @@ in_nav: 1
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
-{% include algolia.html %}
