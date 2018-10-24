@@ -52,6 +52,9 @@ algolia:
   search_only_api_key: a53c7f9c8141b850e2cce55dad73eb3b
 
 markdown: kramdown
+kramdown:
+  auto_ids: true
+
 exclude:
   - Gemfile
   - Gemfile.lock
