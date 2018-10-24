@@ -36,7 +36,7 @@ title: Home
 <section id="projects">
   <div class="container">
     <h1 class="min-head">MAIN PROJECTS</h1>
-    <div class="project-feed">
+    <div class="project-feed" id="search-hits">
       {% for project in site.data.projects %}
         {% if project[1].main %}
         <a class="card" href="{{ project[1].link }}" target="_blank">
