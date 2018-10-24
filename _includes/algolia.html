@@ -1,7 +1,9 @@
+
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<base href="{{ site.baseurl }}">
 
 <script>
 const search = instantsearch({
@@ -9,45 +11,39 @@ const search = instantsearch({
   apiKey: '{{ site.algolia.search_only_api_key }}',
   indexName: '{{ site.algolia.index_name }}'
 });
-
 const hitTemplate = function(hit) {
   let date = '';
   if (hit.date) {
     date = moment.unix(hit.date).format('MMM D, YYYY');
   }
-
   let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
-
   const title = hit._highlightResult.title.value;
-
   let breadcrumbs = '';
   if (hit._highlightResult.headings) {
     breadcrumbs = hit._highlightResult.headings.map(match => {
       return `<span class="post-breadcrumb">${match.value}</span>`
     }).join(' > ')
   }
-
   const content = hit._highlightResult.html.value;
-
   return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
-      <div class="post-snippet">${content}</div>
-    </div>
+    <a class="post-preview" href="${url}">
+      <span class="head">
+        <h3>${title}</h3>
+        <h6>${date}</h6>
+      </span>
+      <div class="p">
+        ${content}
+      </div>
+    </a>
   `;
 }
-
-
 search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
     placeholder: 'Search into posts...',
-    poweredBy: true // This is required if you're on the free Community plan
+    poweredBy: true
   })
 );
-
 search.addWidget(
   instantsearch.widgets.hits({
     container: '#search-hits',
@@ -56,11 +52,21 @@ search.addWidget(
     }
   })
 );
-
+search.addWidget(
+  instantsearch.widgets.pagination({
+    container: '#pagination',
+    maxPages: 4,
+    // default is to scroll to 'body', here we disable this behavior
+    scrollTo: false
+  })
+);
 search.start();
 </script>
 
 <style>
+.ais-search-box--powered-by{
+  display: none;
+}
 .ais-search-box {
   max-width: 100%;
   margin-bottom: 15px;
@@ -68,7 +74,7 @@ search.start();
 .post-item {
   margin-bottom: 30px;
 }
-.post-link .ais-Highlight {
+.post-preview .ais-Highlight {
   color: #111;
   font-style: normal;
   text-decoration: underline;
@@ -85,7 +91,7 @@ search.start();
   font-weight: bold;
   font-style: normal;
 }
-.post-snippet .ais-Highlight {
+.p .ais-Highlight {
   color: #2a7ae2;
   font-style: normal;
   font-weight: bold;

@@ -4,55 +4,29 @@ title: Posts
 in_nav: 1
 ---
 <section id="posts">
-  <div id="search-searchbar"></div>
 
-  <div class="post-list" id="search-hits">
-    {% for post in site.posts %}
-      <div class="post-item">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h2>
-
-        <div class="post-snippet">{{ post.excerpt }}</div>
-      </div>
-    {% endfor %}
-  </div>
-  {% include algolia.html %}
-  
   <div class="container">
     <h1 class="min-head">ALL POSTS</h1>
-    {% for post in paginator.posts %}
-    <a class="post-preview" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
+
+    <div id="search-searchbar"></div>
+
+    <div class="post-list" id="search-hits">
+      {% for post in paginator.posts %}
+      <a class="post-preview" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
         <span class="head">
           <h3>{{ post.title }}</h3>
-          <h6>{{ post.date | date: "%d %b %Y" | upcase }}</h6>
+          <h6>{{ post.date | date: "%b %d, %Y" }}</h6>
         </span>
-        <span class="p">
-          {{ post.content | strip_html | truncatewords: 15, "" }}...
-        </span>
-    </a>
-    {% endfor %}
+        <div class="p">
+          {{ post.excerpt }}...
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div id="pagination">
+      <!-- Pagination widget will appear here -->
+    </div>
+    {% include algolia.html %}
   </div>
 </section>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/blog/{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/blog">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/blog/{{paginator.previous_page}}">Older</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
