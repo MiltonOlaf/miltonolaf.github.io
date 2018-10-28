@@ -4,8 +4,8 @@ home:
   target: _self
 
 blog:
-  title: posts
-  url: "posts"
+  title: blog
+  url: "blog"
   target: _self
 
 projects:
