@@ -18,10 +18,12 @@ html {
   font-family: $root-font-family;
   font-size: $root-font-size;
   line-height: $root-line-height;
-	letter-spacing: 0.01rem;
+	letter-spacing: $root-letter-spacing;
 
   @media (min-width: $large-breakpoint) {
     font-size: $large-font-size;
+    line-height: $large-font-line-height;
+  	letter-spacing: $large-font-letter-spacing;
   }
 }
 
