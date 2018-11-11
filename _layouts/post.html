@@ -7,41 +7,23 @@ auto_container: false
     <header>
       <h1>{{ page.title }}</h1>
       <div class="info">
-        <time datetime="{{ page.date | date: "%d/%m/%Y" }}">{{ page.date | date: "%b %d, %Y" }}</time>
+        <time datetime="{{ page.date | date: "%d/%m/%Y" }}">{{ page.date | date: "%d %b %Y" | upcase }}</time>
         {% for node in page.categories %}
-        {{ node }}
+          {{ node }}
         {% endfor %}
       </div>
     </header>
   </div>
-  {% if page.image.path %}
-  <div id="cover" class="container">
-    <figure class="brand-image">
-      <div class="image" style="background-image: url({{ page.image.path }});"></div>
-      <figcaption>{{ page.image.rights }}</figcaption>
-    </figure>
-  </div>
-  {% endif %}
   <div class="container">
     {{ content }}
   </div>
 </article>
+
 <div class="related container">
   {% if site.related_posts != empty %}
   <aside class="post-feed">
     {% for post in site.related_posts limit:3 %}
     <article class="post-card{% unless post.image %} no-image{% endunless %}">
-        {% if post.image %}
-            <a class="post-card-image-link" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
-                <div class="glitch-img post-card-image">
-                  <div class="glitch__img" style="background-image: url({{ site.baseurl }}{{ post.image.path }})"></div>
-                  <div class="glitch__img" style="background-image: url({{ site.baseurl }}{{ post.image.path }})"></div>
-                  <div class="glitch__img" style="background-image: url({{ site.baseurl }}{{ post.image.path }})"></div>
-                  <div class="glitch__img" style="background-image: url({{ site.baseurl }}{{ post.image.path }})"></div>
-                  <div class="glitch__img" style="background-image: url({{ site.baseurl }}{{ post.image.path }})"></div>
-                </div>
-            </a>
-        {% endif %}
         <div class="post-card-content">
             <a class="post-card-content-link" href="{{ site.baseurl }}/{{ post.url | remove_first: '/' }}">
                 <header class="post-card-header">

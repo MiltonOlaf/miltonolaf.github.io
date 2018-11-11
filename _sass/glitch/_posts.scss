@@ -23,8 +23,8 @@
       font-family: $root-font-family;
       font-weight: 400;
       font-size: .9rem;
-      display: inline-block;
-      float: right;
+      display: flex;
+      justify-content: space-between;
       color: darken($gray-3, 5%);
       a{
         border: 0;
