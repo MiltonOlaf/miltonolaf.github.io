@@ -7,22 +7,30 @@
   background: $body-bg-alter;
   overflow: hidden;
   overflow-x: auto;
+
   nav{
     position: relative;
     min-width: 100%;
     z-index: 10;
+
     a.home{
       letter-spacing: 0;
+
       &::after{
         content: "―";
         margin: 0 1rem;
         color: $gray-2;
         border-bottom: 0;
+
         &:hover{
           color: inherit;
+
         }
+
       }
+
     }
+
     ul{
       display: flex;
       padding: 0;
@@ -30,29 +38,40 @@
       font-weight: 700;
       vertical-align: middle;
       margin: 0;
+
       li{
-        letter-spacing: .15em;
         margin-right: 1.5rem;
         list-style: none;
-        font-size: 0.75rem;
+				font-size: 12px;
+  		  letter-spacing: calc(0.008em * 10);
+
         &:last-child{
           margin-right: 0;
           padding-right: 1.5rem;
         }
+
         &:first-child{
           margin-right: 0;
         }
+
         a{
           color: $gray-4;
           border-bottom: 0;
+
           &:hover{
             color: $color-one;
           }
+
         }
+
       }
+
     }
+
   }
+
   .active{
     color: $color-one;
   }
+
 }
