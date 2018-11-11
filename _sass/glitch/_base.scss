@@ -26,6 +26,11 @@ html {
   	letter-spacing: $large-font-letter-spacing;
   }
 }
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: $root-font-family-var;
+  }
+}
 
 body {
   color: $body-color;
