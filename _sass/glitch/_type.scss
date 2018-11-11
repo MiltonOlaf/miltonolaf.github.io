@@ -20,9 +20,10 @@ h1 {
 
 .min-head{
   font-weight: 600;
-  font-size: 13px;
+  font-size: 12px;
   color: $gray-3;
-  letter-spacing: .18em;
+  line-height: 17px;
+  letter-spacing: calc(0.008em * 10);
   svg{
     vertical-align: middle;
     margin-top: -3px;
