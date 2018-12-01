@@ -43,3 +43,13 @@ section#posts{
     margin: 0;
   }
 }
+#blog .post-preview{
+  border-top: 0;
+  
+  &::first-line{
+    border-top: 0;
+  }
+  &:last-child{
+    border-bottom: 0;
+  }
+}

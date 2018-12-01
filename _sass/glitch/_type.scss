@@ -10,13 +10,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
   font-size: 40px;
   letter-spacing: -0.017em;
   line-height: 56px;
+
   a{
     border-bottom: 0;
   }
+
+  @media (max-width: $large-breakpoint) {
+    font-size: 30px;
+    letter-spacing: -0.016em;
+    line-height: 42px;
+  }
+
 }
 
 .min-head{
@@ -25,11 +32,14 @@ h1 {
   color: $gray-3;
   line-height: 17px;
   letter-spacing: calc(0.008em * 10);
+
   svg{
     vertical-align: middle;
     margin-top: -3px;
   }
+
 }
+
 a:hover{
   .min-head{
     color: $color-one;
@@ -42,12 +52,26 @@ h2 {
   font-size: 30px;
   letter-spacing: -0.016em;
   line-height: 42px;
+
+  @media (max-width: $large-breakpoint) {
+    font-size: 24px;
+    letter-spacing: -0.014em;
+    line-height: 34px;
+  }
+
 }
 
 h3 {
   font-size: 24px;
   letter-spacing: -0.014em;
   line-height: 34px;
+
+  @media (max-width: $large-breakpoint) {
+    font-size: 20px;
+    letter-spacing: -0.011em;
+    line-height: 28px;
+  }
+
 }
 
 h4, h5, h6 {

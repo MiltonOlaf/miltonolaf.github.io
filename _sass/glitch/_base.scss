@@ -19,6 +19,9 @@ html {
   font-size: $root-font-size;
   line-height: $root-line-height;
 	letter-spacing: $root-letter-spacing;
+  font-kerning: normal;
+  -moz-font-feature-settings: "calt" 1, "kern" 1, "liga" 1;
+  font-feature-settings: "calt" 1, "kern" 1, "liga" 1;
 
   @media (min-width: $large-breakpoint) {
     font-size: $large-font-size;
