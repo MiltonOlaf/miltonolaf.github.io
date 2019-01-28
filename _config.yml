@@ -8,8 +8,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 url: https://miltonolaf.com # the base hostname & protocol for your site, e.g. http://example.com
 lang: es_MX
-paginate: 6
-paginate_path: /posts/:num/
 # Social users - twitter, instagram, github, gitlab, codepen profile, youtube and facebook
 twitter:
   username: olafmilton
@@ -65,7 +63,6 @@ exclude:
   - vendor
 plugins:
   - jekyll-feed
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-toc
