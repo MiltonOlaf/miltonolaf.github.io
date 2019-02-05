@@ -2,20 +2,25 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
+.content{
+  width: calc(100% - 24px);
+  @media (min-width: $large-breakpoint) {
+    width: calc(100% - 33.51px);
+  }
+}
 .container {
-  max-width: 47.25rem;
+  max-width: 22.5rem;
+  padding-top: 20vh;
   padding-left:  1.5rem;
   padding-right: 1.5rem;
-  margin-left:  auto;
-  margin-right: auto;
+  margin-left: 0rem;
+
+  @media (min-width: $large-breakpoint) {
+    margin-left: 8rem;
+  }
 }
 .post{
   .container{
     max-width: 42.5rem;
-  }
-}
-.sub-header{
-  .container{
-    max-width: 47.25rem;
   }
 }
