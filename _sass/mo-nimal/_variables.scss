@@ -19,9 +19,9 @@ $color-two: $color-one;
 // Root
 $root-font-family: 'Inter UI', system-ui, sans-serif;
 $root-font-family-var: 'Inter UI var alt', system-ui, sans-serif;
-$root-font-size: 14px;
-$root-letter-spacing: 0em;
-$root-line-height: 20px;
+$root-font-size: 16px;
+$root-letter-spacing: -0.005em;
+$root-line-height: 22px;
 
 $body-color: $gray-4;
 $body-bg: #fff;
@@ -46,9 +46,9 @@ $border-color: #e5e5e5;
 
 // Responsive
 $large-breakpoint: 38em;
-$large-font-size: 16px;
-$large-font-letter-spacing: -0.005em;
-$large-font-line-height: 22px;
+$large-font-size: 18px;
+$large-font-letter-spacing: -0.008em;
+$large-font-line-height: 25px;
 
 // Code
 $code-font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
