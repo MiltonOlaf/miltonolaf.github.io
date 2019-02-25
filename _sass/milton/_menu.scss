@@ -75,6 +75,7 @@ html, body, .perspective {
 				transform-origin: center center;
 				transform: rotate(-100deg);
 			}
+
 			.right-bar:after {
 				transform-origin: center center;
 				transform: rotate(100deg);
@@ -97,10 +98,6 @@ html, body, .perspective {
 
 		&:focus{
 			outline: 0;
-		}
-
-		@media (min-width: $large-breakpoint) {
-			padding: 0 1.25rem 0 0.6125rem;
 		}
 	}
 }
@@ -157,6 +154,10 @@ html, body, .perspective {
 	position: fixed;
 	-webkit-perspective: 1500px;
 	perspective: 1500px;
+	@media (min-width: $large-breakpoint) {
+		-webkit-perspective: 1800px;
+		perspective: 1800px;
+  }
 }
 
 .modalview{
@@ -189,7 +190,6 @@ html, body, .perspective {
 .outer-nav {
 	position: absolute;
 	height: auto;
-	font-size: 2em;
 
 	&.vertical {
 		top: 50%;
@@ -210,8 +210,10 @@ html, body, .perspective {
 	a {
 		display: inline-block;
 		white-space: nowrap;
-		font-weight: 300;
+		font-size: 30px;
+    letter-spacing: -0.016em;
 		margin: 0 0 30px 0;
+		border-bottom-style: dotted;
 		color: #fff;
 		-webkit-transition: color 0.3s;
 		transition: color 0.3s;
@@ -219,24 +221,9 @@ html, body, .perspective {
 		transform-style: preserve-3d;
 
 		&:hover {
-			color: #ffdccd;
+			color: #f0f0f0;
 		}
 
-		&::before {
-			display: inline-block;
-			font-family: 'typicons';
-			speak: none;
-			font-style: normal;
-			font-weight: normal;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			margin-right: 10px;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-backface-visibility: hidden;
-			backface-visibility: hidden;
-		}
 	}
 
 	&.vertical a {
@@ -250,7 +237,8 @@ html, body, .perspective {
 }
 /* Effect */
 .effect {
-	background: #b8b6b4;
+	background: #b3b3b3;
+
 	.page {
 		-webkit-transition: -webkit-transform 0.4s;
 		transition: transform 0.4s;
@@ -305,6 +293,10 @@ html, body, .perspective {
 		.page {
 			-webkit-transform: translateZ(-100px) translateX(50%) rotateY(-45deg);
 			transform: translateZ(-100px) translateX(50%) rotateY(-45deg);
+			@media (min-width: $large-breakpoint) {
+				-webkit-transform: translateZ(100px) translateX(20%) rotateY(-35deg);
+				transform: translateZ(100px) translateX(20%) rotateY(-35deg);
+		  }
 		}
 
 	}
