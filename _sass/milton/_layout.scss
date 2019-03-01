@@ -14,13 +14,10 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin-left: 0rem;
-
+  &.fluid{
+    max-width: 37rem;
+  }
   @media (min-width: $large-breakpoint) {
     margin-left: 7rem;
-  }
-}
-.post{
-  .container{
-    max-width: 42.5rem;
   }
 }
