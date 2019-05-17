@@ -1,13 +1,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    {% if page.title == "Home" %}
-      Milton Olaf P.
-    {% else %}
-      {{ page.title }} &mdash; {{ site.title }}
-    {% endif %}
-  </title>
+  <title>{{ site.title }}</title>
   {% seo title=false %}
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/{{ site.favicon }}">
