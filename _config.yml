@@ -53,6 +53,8 @@ markdown: kramdown
 kramdown:
   auto_ids: true
 
+remote_theme: miltonolaf/another
+
 exclude:
   - Gemfile
   - Gemfile.lock
