@@ -24,7 +24,6 @@ Los sistemas informáticos son omnipresentes, desde el sistema integrado que con
 
 Más allá de nuestra vida cotidiana, la informática ha tenido un impacto igualmente grande en otras áreas de la ciencia, la mayoría de las cuales ahora requieren el procesamiento y análisis de inmensos conjuntos de datos. Desde el manejo de datos en el gran colisionador de hadrones hasta el proyecto del genoma humano, estos esfuerzos científicos simplemente no serían posibles sin las ciencias de la computación.
 
-{% include image.html url="computer-science.jpg" description="'Map of Computer Science' by Dominic Walliman" %}
 
 Las ciencias de la computación abarcan una serie de temas, desde los estudios teóricos de algoritmos y los límites de la computación hasta las cuestiones prácticas como la creación de nuevo software y hardware. Por lo tanto vale la pena conocer las distintas áreas de estudio de las ciencias de la computación.
 
