@@ -1,7 +1,7 @@
 ---
 layout: algolia-feed
 title: Blog
-priority: 3
+priority: 1
 content_width: large
 post_content: false
 ---
