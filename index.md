@@ -2,6 +2,7 @@
 layout: page
 title: Milton Olaf
 priority: 0
+page_title: false
 ---
 ### **I’m Milton, computer science undergraduate from México.**
 
