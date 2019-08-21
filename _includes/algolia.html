@@ -55,7 +55,7 @@ mainIndex.addWidget(
     container: '#hits',
     templates: {
       item(hit) {
-        let url = `{{ site.url }}${hit.url}`;
+        let url = `{{ site.url }}/posts${hit.url}`;
         let date = moment.unix(hit.date).format('MMM DD, YYYY');
         let cover = '';
         let excerpt_text = '';
@@ -91,7 +91,7 @@ subIndex.addWidget(
     container: '#hits-second',
     templates: {
       item(hit) {
-        let url = `{{ site.url }}${hit.url}`;
+        let url = `{{ site.url }}/notes${hit.url}`;
         let date = moment.unix(hit.date).format('MMM DD, YYYY');
         let cover = '';
         let excerpt_text = '';
