@@ -1,6 +1,6 @@
 ---
 layout: page
-title: miltonolaf
+title: Milton
 priority: 0
 page_title: false
 ---
