@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Milton Olaf
+title: miltonolaf
 priority: 0
 page_title: false
 ---
