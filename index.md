@@ -4,10 +4,12 @@ title: Milton
 priority: 0
 page_title: false
 ---
-### **I’m Milton, computer science undergraduate from México.**
+### **Hi, i’m Milton.**
 
-I love automating processes and implementing new technologies in my work, i live to design software and write code.
+I´m a computer engineer and software developer who enjoys working on highly complex applications especially with Python, also an AI enthusiast, interested in ML engineering and meta-learning.
 
-Lover of open source and free knowledge, working on my small contribution.
+Right now working as a lead developer for [hiperable](https://hiperable.com) and building "[hyperplatform](https://hyperplatform.io). 
 
-Right now, I’m a lead developer at [hyphev](https://hyphev.com).
+I should mention that I love open-source, I work on my small contribution before continuing my steps in the academy so I am open to collaborate on exciting projects, let me know if you need free help.
+
+You can find me on twitter and github, or reach me via hey[at]miltonolaf.com.
