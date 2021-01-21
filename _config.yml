@@ -37,7 +37,7 @@ kramdown:
   auto_ids: true
 
 remote_theme: miltonolaf/another
-theme: another-theme
+theme: jekyll-theme-cayman
 
 defaults:
   -
