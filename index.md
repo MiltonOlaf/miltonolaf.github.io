@@ -10,6 +10,6 @@ I'm a computer engineer and software developer who enjoys working on highly comp
 
 Right now working as a lead developer for [hiperable](https://hiperable.com) and building [hyplatform](https://hyplatform.io). 
 
-I should mention that I love open-source, I work on my small contribution before continuing my steps in the academy so I'm open to collaborate on exciting projects, let me know if you need free help.
+I should mention that I love open-source, I work on my small contribution, so I'm open to collaborate on exciting projects, let me know if you need free help.
 
 You can find me on [twitter](//twitter.com/olafmilton) and [github](//github.com/miltonolaf), or reach me via <a>hey[at]miltonolaf.com</a>.
