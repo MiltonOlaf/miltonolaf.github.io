@@ -6,7 +6,7 @@ page_title: false
 ---
 # **Hi, i'm Milton.**
 
-I'm a computer engineer and software developer who enjoys working on highly complex applications especially with Python, also an AI enthusiast, interested in ML engineering and low-shot learning.
+I'm a software engineer who enjoys working on complex applications especially with Python, also an AI enthusiast, interested in ML engineering and low-shot learning.
 
 Right now working at Cornershop by Uber and building [hyplatform](https://hyplatform.io). 
 
