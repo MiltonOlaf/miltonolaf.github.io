@@ -8,7 +8,7 @@ page_title: false
 
 I'm a computer engineer and software developer who enjoys working on highly complex applications especially with Python, also an AI enthusiast, interested in ML engineering and low-shot learning.
 
-Right now working as a lead developer for [hiperable](https://hiperable.com) and building [hyplatform](https://hyplatform.io). 
+Right now working at Cornershop by Uber and building [hyplatform](https://hyplatform.io). 
 
 I should mention that I love open-source, I work on my small contribution, so I'm open to collaborate on exciting projects, let me know if you need free help.
 
